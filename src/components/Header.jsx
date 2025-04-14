@@ -16,7 +16,7 @@ const Header = () => {
 
       <div>
         <button className="mt-0 bg-[#4A4E69] hover:bg-[#786b64] text-white text-[14px] md:text-[16px] rounded-md px-4 py-2 shadow shadow-black transition duration-300 ease-in-out ">
-          Contact
+          Contact Us
         </button>
       </div>
     </div>
