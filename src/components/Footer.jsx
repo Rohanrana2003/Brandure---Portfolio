@@ -18,7 +18,7 @@ const Footer = () => {
             <div className="mb-6 md:mb-0">
               <div className="flex items-center">
                 <img
-                  src="src/assets/logo.png" // Replace with your actual logo path
+                  src="/assets/logo.png" // Replace with your actual logo path
                   alt="Brandure Digital Marketing"
                   className="h-24 w-auto mr-3"
                 />

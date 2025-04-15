@@ -1,8 +1,15 @@
+/* eslint-disable no-unused-vars */
+// import { useForm } from "@formspree/react";
 import React from "react";
 
-const ContactForm = () => {
+const Contact = () => {
+  // const [state, handleSubmit] = useForm("xnnprlvz");
+  // if (state.succeeded) {
+  //   return <p>Thanks for joining!</p>;
+  // }
+
   return (
-    <div className="py-20 px-[30px] lg:px-[120px] md:px-[40px]">
+    <div id="contact" className="py-20 px-[30px] lg:px-[120px] md:px-[40px]">
       <div className="relative  flex flex-col lg:flex-row gap-10 justify-center items-center px-5 md:px-20 py-10 rounded-[30px] lg:rounded-[45px] bg-[#fff] mx-auto overflow-hidden">
         {/* right background */}
         <div className="absolute max-lg:hidden min-w-[23%] min-h-[800px] bg-[#A19188] right-0 top-0"></div>
@@ -18,33 +25,47 @@ const ContactForm = () => {
           </p>
 
           {/* Form */}
-          <form className="flex flex-col gap-3 w-full max-w-[500px]">
+          <form
+            action="https://formspree.io/f/mdkejydw"
+            method="POST"
+            className="flex flex-col gap-3 w-full max-w-[500px]"
+          >
             <input
+              id="name"
+              name="name"
               type="text"
               placeholder="Name"
               required
               className="border border-[#A19188] p-2 md:p-3 rounded-md focus:outline-none focus:border-[#4A4E69]"
             />
             <input
+              id="email"
               type="email"
+              name="email"
               placeholder="Email"
               required
               className="border border-[#A19188] p-2 md:p-3 rounded-md focus:outline-none focus:border-[#4A4E69]"
             />
             <textarea
+              id="message"
+              name="message"
               rows={5}
               placeholder="Your Message"
               className="border border-[#A19188] p-2 md:p-3 rounded-md focus:outline-none focus:border-[#4A4E69]"
             ></textarea>
 
-            <button className="bg-[#4A4E69] hover:bg-[#786b64] text-white text-[14px] md:text-[16px] rounded-md px-4 py-2 shadow shadow-black transition duration-300 ease-in-out ">
+            <button
+              type="submit"
+              // disabled={state.submitting}
+              className="bg-[#4A4E69] hover:bg-[#786b64] text-white text-[14px] md:text-[16px] rounded-md px-4 py-2 shadow shadow-black transition duration-300 ease-in-out "
+            >
               Send Message
             </button>
           </form>
           {/* Phone and email */}
           <div className="flex max-md:flex-col justify-start items-center gap-6 lg:gap-16 mt-10">
             <div className="phone flex justify-center items-center gap-3">
-              <img src="src/assets/icon-phone.png" />
+              <img src="/assets/icon-phone.png" />
               <div className="flex flex-col justify-start">
                 <p className="text-[14px] font-bold">PHONE</p>
                 <a
@@ -56,7 +77,7 @@ const ContactForm = () => {
               </div>
             </div>
             <div className="phone flex justify-center items-center gap-3 ">
-              <img src="src/assets/icon-email.png" />
+              <img src="/assets/icon-email.png" />
               <div className="flex flex-col justify-start">
                 <p className="text-[14px] font-bold">EMAIL</p>
                 <a
@@ -86,4 +107,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default Contact;
