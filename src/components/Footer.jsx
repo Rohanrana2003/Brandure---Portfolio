@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-[#292D32] font-body text-white pt-12 pb-6">
+    <footer className="bg-[#292D32] font-body text-white pt-12 pb-6 lg:px-10">
       <div className="container mx-auto px-[30px] md:px-4">
         {/* Top Section - Logo and Social */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
@@ -147,6 +147,7 @@ const Footer = () => {
                   Careers
                 </a>
               </li>
+
               <li>
                 <a
                   href="#"
@@ -158,27 +159,30 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Newsletter */}
+          {/* Contact */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Newsletter</h3>
+            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <p className="text-gray-400 mb-4">
-              Subscribe to our newsletter for the latest digital marketing tips
+              Follow our Social Handles for the latest digital marketing tips
               and updates.
             </p>
-            <form className="flex">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="px-4 py-2 w-full rounded-l focus:outline-none text-gray-900"
-                required
-              />
-              <button
-                type="submit"
-                className="bg-gradient-to-r from-blue-500 to-purple-600 px-4 py-2 rounded-r hover:opacity-90 transition-opacity"
+            <p className="text-gray-200 flex gap-2 items-center my-2">
+              <img src="assets/icon-mail.png" className="w-5" />
+
+              <a
+                className="hover:text-gray-400"
+                href="mailto:mybrandure@gmail.com"
               >
-                Subscribe
-              </button>
-            </form>
+                {" "}
+                mybrandure@gmail.com
+              </a>
+            </p>
+            <p className="cursor-pointer flex gap-2 items-center my-2">
+              <img src="assets/icon-telephone.png" className="w-5" />
+              <a className="text-gray-200 hover:text-gray-400">
+                +91 0123456789
+              </a>
+            </p>
           </div>
         </div>
 

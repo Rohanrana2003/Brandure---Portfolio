@@ -10,8 +10,8 @@ const Partners = () => {
   return (
     <section className=" text-white max-lg:py-10">
       <div className="py-4 lg:py-16 mx-auto max-w-screen-xl px-4">
-        <h2 className="font-heading mb-4 lg:mb-10 text-3xl font-bold tracking-tight leading-tight md:text-4xl text-gray-800 text-center">
-          OUR PARTNERS
+        <h2 className="font-heading mb-4 lg:mb-10 text-3xl font-semibold tracking-tight leading-tight md:text-4xl text-gray-800 text-center">
+          Our Clients
         </h2>
         <Swiper
           spaceBetween={20}

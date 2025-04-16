@@ -29,6 +29,41 @@ export const servicesData = [
   },
 ];
 
+export const testimonialData = [
+  {
+    id: "1",
+    name: "Mirana Marci",
+    role: "3D Designer",
+    img: "/assets/test-avatar1.png",
+    description:
+      "Partnering with Brandure was the best decision we made for our online growth. Their SEO strategies helped us rank on the first page of Google within just three months.",
+  },
+  {
+    id: "2",
+    name: "Crystal Maiden",
+    role: "UI/UX Designer",
+    img: "/assets/test-avatar2.png",
+    description:
+      "Brandure didn’t just manage our social media — they transformed it. Engagement doubled, followers grew steadily, and we finally found our brand voice. Their content game is on point!",
+  },
+  {
+    id: "3",
+    name: "Dazzle Healer",
+    role: "Frontend Developer",
+    img: "/assets/test-avatar3.png",
+    description:
+      "We approached Brandure for a full rebranding, and the results were beyond our expectations. The team understood our vision perfectly and delivered a modern, clean brand identity.",
+  },
+  {
+    id: "4",
+    name: "Hearts of Taras",
+    role: "Logo Designer",
+    img: "/assets/test-avatar4.png",
+    description:
+      "Our ad campaigns with Brandure generated a 5x ROI. Their data-driven approach and attention to detail made all the difference. Highly recommend them to anyone looking to scale fast and smart.",
+  },
+];
+
 export const partners = [
   {
     partner: (
@@ -258,5 +293,80 @@ export const partners = [
         </svg>
       </a>
     ),
+  },
+];
+
+export const socialMediaClients = [
+  {
+    id: 1,
+    name: "CZARDOM",
+    link: "https://www.instagram.com/czardom/",
+    img: "assets/smm-czardom.png",
+  },
+  {
+    id: 2,
+    name: "JUS",
+    link: "https://www.instagram.com/jus.experience/",
+    img: "assets/smm-jus.png",
+  },
+  {
+    id: 3,
+    name: "VEDA",
+    link: "https://www.instagram.com/the_veda_toddlers/",
+    img: "assets/smm-veda.png",
+  },
+  {
+    id: 4,
+    name: "NIKUNJ",
+    link: "https://www.instagram.com/gppl.india/",
+    img: "assets/smm-nikunj.png",
+  },
+  {
+    id: 5,
+    name: "LUSAKA",
+    link: "https://www.instagram.com/lusakahappening/",
+    img: "assets/smm-lusaka.png",
+  },
+  {
+    id: 6,
+    name: "SUKH",
+    link: "https://www.instagram.com/iamsukhd/",
+    img: "assets/smm-sukh.png",
+  },
+  {
+    id: 7,
+    name: "LAHORE",
+    link: "https://www.instagram.com/lahorewaligali.mohali/",
+    img: "assets/smm-lahore.png",
+  },
+];
+
+export const webDevClients = [
+  {
+    id: 1,
+    name: "VEDA",
+    link: "https://thevedatoddlers.com/",
+    img: "assets/web-vedatoddlers.png",
+  },
+  {
+    id: 2,
+    name: "LUSAKA",
+    link: "https://lusakahappening.com/",
+    img: "assets/web-lusakahappening.png",
+  },
+];
+
+export const seoClients = [
+  {
+    id: 1,
+    name: "VEDA",
+    link: "https://thevedatoddlers.com/",
+    img: "assets/web-vedatoddlers.png",
+  },
+  {
+    id: 2,
+    name: "LUSAKA",
+    link: "https://lusakahappening.com/",
+    img: "assets/web-lusakahappening.png",
   },
 ];

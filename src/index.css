@@ -10,6 +10,27 @@ html{
   scroll-behavior: smooth;
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff; /* White background */
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4A4E69; /* Peach color */
+  border-radius: 6px;
+  border: 2px solid #ffffff; /* White border */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffcc99; /* Slightly darker peach on hover */
+}
+
 .swiper {
   width: 95vw;
 }

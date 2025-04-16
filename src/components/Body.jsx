@@ -1,5 +1,5 @@
 import React from "react";
-import { servicesData } from "../utils/constants";
+import { servicesData, testimonialData } from "../utils/constants";
 import Contact from "./Contact";
 import Partners from "./Partners";
 import { useNavigate } from "react-router-dom";
@@ -53,7 +53,7 @@ const Body = () => {
                 onClick={() => navigate("/portfolio")}
                 className="bg-[#4A4E69] hover:bg-[#786b64] text-white text-[13px] md:text-[17px] rounded-md px-6 py-3 transition duration-300 ease-in-out"
               >
-                Get Started
+                Our Portfolio
               </button>
               <a href="/#about">
                 <button className="bg-transparent hover:bg-[#786b64] text-[#4A4E69] border border-[#4A4E69] hover:border-[#786b64] hover:text-white text-[13px] md:text-[17px] rounded-md px-6 py-3 transition duration-300 ease-in-out ml-5">
@@ -92,8 +92,9 @@ const Body = () => {
           </h1>
 
           <p className=" text-[16px] lg:text-[18px] ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus
-            nunc, posuere in justo vulputate, bibendum sodales{" "}
+            With a perfect blend of creativity and analytics, Brandure builds
+            marketing campaigns that attract attention, engage audiences, and
+            convert them into loyal customers.{" "}
           </p>
 
           <div className="stats flex flex-row gap-20 md:gap-32 mb-10">
@@ -115,7 +116,7 @@ const Body = () => {
             </div>
           </div>
           <a href="/#contact">
-            <button className="px-10 lg:px-12 py-6 lg:py-8 text-lg lg:text-xl bg-[#4A4E69] hover:bg-[#383b4f] transition-colors duration-300 text-[#F5F1EE] w-fit rounded-3xl">
+            <button className="px-10 lg:px-12 py-4 lg:py-8 text-lg lg:text-xl bg-[#4A4E69] hover:bg-[#383b4f] transition-colors duration-300 text-[#F5F1EE] w-fit rounded-2xl lg:rounded-3xl">
               Hire Us
             </button>
           </a>
@@ -180,7 +181,7 @@ const Body = () => {
               <div key={service.id} className="mt-10">
                 <div className="flex items-center gap-2 mb-1">
                   <img className="w-[28px]" src={service.logo}></img>
-                  <h1 className="font-medium text-[18px] lg:text-[23px] ">
+                  <h1 className="font-semibold text-[18px] lg:text-[23px] ">
                     {service.title}
                   </h1>
                 </div>
@@ -192,6 +193,42 @@ const Body = () => {
           </section>
         </div>
       </section>
+
+      {/* Testimonials */}
+      <div className="bg-[#F5F1EE] flex flex-col items-center justify-center gap-2 px-10 md:px-44 lg:px-[120px] py-24">
+        <h3 className="font-body font-bold text-lg lg:text-xl">
+          Clients Feedback
+        </h3>
+        <h1 className="font-heading font-medium text-center text-[35px] lg:text-[55px] ">
+          What our client says about us
+        </h1>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10 px">
+          {testimonialData.map((testimonial) => (
+            <div
+              key={testimonial.id}
+              className="bg-[#fff] shadow-black shadow-lg  lg:w-[35vw] rounded-3xl py-5 px-6"
+            >
+              <div className="flex justify-between items-center border-b pb-3">
+                <img className="w-10" src="assets/test-comma.png" alt="test" />
+                <img className="w-28" src="assets/test-stars.png" alt="test" />
+              </div>
+
+              <div className="py-4 px-2 text-sm md:text-[15px]">
+                <i>{testimonial.description}</i>
+              </div>
+
+              <div className="flex justify-start items-center gap-4">
+                <img className="w-14" src={testimonial.img} />
+                <div className="flex flex-col ">
+                  <p className="font-bold">{testimonial.name}</p>
+                  <p className="text-[14px]">{testimonial.role}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
 
       <Contact />
     </div>

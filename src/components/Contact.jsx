@@ -1,13 +1,6 @@
-/* eslint-disable no-unused-vars */
-// import { useForm } from "@formspree/react";
 import React from "react";
 
 const Contact = () => {
-  // const [state, handleSubmit] = useForm("xnnprlvz");
-  // if (state.succeeded) {
-  //   return <p>Thanks for joining!</p>;
-  // }
-
   return (
     <div id="contact" className="py-20 px-[30px] lg:px-[120px] md:px-[40px]">
       <div className="relative  flex flex-col lg:flex-row gap-10 justify-center items-center px-5 md:px-20 py-10 rounded-[30px] lg:rounded-[45px] bg-[#fff] mx-auto overflow-hidden">
@@ -56,13 +49,13 @@ const Contact = () => {
 
             <button
               type="submit"
-              // disabled={state.submitting}
               className="bg-[#4A4E69] hover:bg-[#786b64] text-white text-[14px] md:text-[16px] rounded-md px-4 py-2 shadow shadow-black transition duration-300 ease-in-out "
             >
               Send Message
             </button>
           </form>
-          {/* Phone and email */}
+
+          {/* Phone and email Icon*/}
           <div className="flex max-md:flex-col justify-start items-center gap-6 lg:gap-16 mt-10">
             <div className="phone flex justify-center items-center gap-3">
               <img src="/assets/icon-phone.png" />
