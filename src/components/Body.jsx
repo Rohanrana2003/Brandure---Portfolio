@@ -166,9 +166,9 @@ const Body = () => {
               Our Services
             </h1>
             <p className=" max-lg:text-center  text-[16px] md:text-[18px] xl:text-[20px] lg:w-[80%] mb-7">
-              At Sunstream Digital, we harness innovative strategies tailored to
-              your unique needs. Our targeted marketing solutions ensure that
-              your message reaches the right audience effectively.
+              At Brandure, we harness innovative strategies tailored to your
+              unique needs. Our targeted marketing solutions ensure that your
+              message reaches the right audience effectively.
             </p>
 
             <div className="services-img">
@@ -205,9 +205,12 @@ const Body = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10 px">
           {testimonialData.map((testimonial) => (
-            <div
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={testimonial.link}
               key={testimonial.id}
-              className="bg-[#fff] shadow-black shadow-lg  lg:w-[35vw] rounded-3xl py-5 px-6"
+              className="bg-[#fff] cursor-pointer shadow-black shadow-lg  lg:w-[35vw] rounded-3xl py-5 px-6"
             >
               <div className="flex justify-between items-center border-b pb-3">
                 <img className="w-10" src="assets/test-comma.png" alt="test" />
@@ -225,7 +228,7 @@ const Body = () => {
                   <p className="text-[14px]">{testimonial.role}</p>
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

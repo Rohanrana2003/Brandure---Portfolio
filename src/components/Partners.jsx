@@ -30,8 +30,14 @@ const Partners = () => {
           modules={[Autoplay]}
           className="mySwiper partners-swiper"
         >
-          {partners.map((partner, i) => (
-            <SwiperSlide key={i}>{partner.partner}</SwiperSlide>
+          {partners.map((partner) => (
+            <SwiperSlide key={partner.id}>
+              <img
+                src={partner.img}
+                className="rounded-full"
+                alt="partner-logo"
+              />
+            </SwiperSlide>
           ))}
         </Swiper>
       </div>

@@ -65,7 +65,7 @@ const Contact = () => {
                   href="#"
                   className="text-gray-400 hover:text-gray-900 transition-colors text-[14px]"
                 >
-                  +91 1234567890
+                  +91 9877926831
                 </a>
               </div>
             </div>

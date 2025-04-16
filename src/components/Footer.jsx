@@ -180,7 +180,7 @@ const Footer = () => {
             <p className="cursor-pointer flex gap-2 items-center my-2">
               <img src="assets/icon-telephone.png" className="w-5" />
               <a className="text-gray-200 hover:text-gray-400">
-                +91 0123456789
+                +91 9877926831
               </a>
             </p>
           </div>
