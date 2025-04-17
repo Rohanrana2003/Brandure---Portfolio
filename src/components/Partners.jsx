@@ -28,15 +28,14 @@ const Partners = () => {
             1024: { slidesPerView: 5, spaceBetween: 50 },
           }}
           modules={[Autoplay]}
-          className="mySwiper partners-swiper"
+          className="mySwiper partners-swiper "
         >
           {partners.map((partner) => (
-            <SwiperSlide key={partner.id}>
-              <img
-                src={partner.img}
-                className="rounded-full"
-                alt="partner-logo"
-              />
+            <SwiperSlide
+              key={partner.id}
+              className="flex justify-center items-center"
+            >
+              <img src={partner.img} alt="partner-logo" className="w-32" />
             </SwiperSlide>
           ))}
         </Swiper>

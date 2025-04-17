@@ -32,21 +32,21 @@ export const servicesData = [
 export const testimonialData = [
   {
     id: "1",
-    name: "Noor kaur",
-    role: "Lahore Wali Gali",
-    img: "/assets/test-avatar1.png",
-    link: "https://www.instagram.com/lahorewaligali.mohali/",
-    description:
-      "Partnering with Brandure was the best decision we made for our online growth. Their SEO strategies helped us rank on the first page of Google within just three months.",
-  },
-  {
-    id: "2",
     name: "Shreya sharma",
     role: "Czardom",
     img: "/assets/test-avatar2.png",
     link: "https://www.instagram.com/czardom/",
     description:
       "Brandure didn’t just manage our social media — they transformed it. Engagement doubled, followers grew steadily, and we finally found our brand voice. Their content game is on point!",
+  },
+  {
+    id: "2",
+    name: "Kapil Singh",
+    role: "Lahore Wali Gali",
+    img: "/assets/test-avatar3.png",
+    link: "https://www.instagram.com/lahorewaligali.mohali/",
+    description:
+      "Partnering with Brandure was the best decision we made for our online growth. Their SEO strategies helped us rank on the first page of Google within just three months.",
   },
   {
     id: "3",
@@ -83,15 +83,19 @@ export const partners = [
   },
   {
     id: "4",
-    img: "/assets/logo-czardom.png",
+    img: "/assets/logo-elira.png",
   },
   {
     id: "5",
-    img: "/assets/logo-lusaka.png",
+    img: "/assets/logo-attire.png",
   },
   {
     id: "6",
-    img: "/assets/logo-elira.png",
+    img: "/assets/logo-lusaka.png",
+  },
+  {
+    id: "7",
+    img: "/assets/logo-czardom.png",
   },
 ];
 
@@ -128,12 +132,18 @@ export const socialMediaClients = [
   },
   {
     id: 6,
+    name: "Chai Churi 88",
+    link: "https://www.instagram.com/chaichuri88/",
+    img: "assets/smm-chaichuri88.png",
+  },
+  {
+    id: 7,
     name: "SUKH",
     link: "https://www.instagram.com/iamsukhd/",
     img: "assets/smm-sukh.png",
   },
   {
-    id: 7,
+    id: 8,
     name: "LAHORE",
     link: "https://www.instagram.com/lahorewaligali.mohali/",
     img: "assets/smm-lahore.png",
