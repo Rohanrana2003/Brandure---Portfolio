@@ -148,6 +148,12 @@ export const socialMediaClients = [
     link: "https://www.instagram.com/lahorewaligali.mohali/",
     img: "assets/smm-lahore.png",
   },
+  {
+    id: 9,
+    name: "onewishbakers",
+    link: "https://www.instagram.com/onewishbakers/",
+    img: "assets/smm-onewish.png",
+  },
 ];
 
 export const webDevClients = [
@@ -163,6 +169,12 @@ export const webDevClients = [
     link: "https://lusakahappening.com/",
     img: "assets/web-lusakahappening.png",
   },
+  {
+    id: 3,
+    name: "onewishbakers",
+    link: "https://onewishbakers.com/",
+    img: "assets/web-onewish.png",
+  },
 ];
 
 export const seoClients = [
@@ -177,5 +189,11 @@ export const seoClients = [
     name: "LUSAKA",
     link: "https://lusakahappening.com/",
     img: "assets/web-lusakahappening.png",
+  },
+  {
+    id: 3,
+    name: "onewishbakers",
+    link: "https://onewishbakers.com/",
+    img: "assets/web-onewish.png",
   },
 ];
