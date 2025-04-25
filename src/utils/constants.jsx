@@ -144,12 +144,24 @@ export const socialMediaClients = [
   },
   {
     id: 8,
+    name: "hashneen",
+    link: "https://www.instagram.com/hashneen23/",
+    img: "assets/smm-hashneen.png",
+  },
+  {
+    id: 9,
+    name: "onewishbakers",
+    link: "https://www.instagram.com/rana_sotal/",
+    img: "assets/smm-rana.png",
+  },
+  {
+    id: 10,
     name: "LAHORE",
     link: "https://www.instagram.com/lahorewaligali.mohali/",
     img: "assets/smm-lahore.png",
   },
   {
-    id: 9,
+    id: 11,
     name: "onewishbakers",
     link: "https://www.instagram.com/onewishbakers/",
     img: "assets/smm-onewish.png",
